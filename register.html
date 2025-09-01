@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> App landing</title>
+    <title>Perfect English | Registration</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/PE purblue copy.png">
 
 	<!-- CSS here -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -32,48 +32,125 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.png" alt="">
+                    <img src="assets/img/logo/PE purblue copy.png" alt="">
                 </div>
             </div>
         </div>
     </div>
     <!-- Preloader Start-->
 
-
+<header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img class="perfect-logo" src="assets/img/logo/PE-final.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li class="active" ><a href="index.html">Home</a></li>
+                                                <li><a href="courses.html">Courses</a></li>
+                                                <li><a href="about.html">About</a></li>
+                                                <li><a href="contact.html">Contact</a></li>
+                                                <!-- Button -->
+                                                <!-- <li class="button-header margin-left "><a href="/register.html" class="btn">Register</a></li> -->
+                                                <!-- <li class="button-header"><a href="login.html" class="btn btn3">Log in</a></li> -->
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
 <!-- Register -->
 
-<main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
+<main class="login-body" data-vide-bg="assets/img/registerrev-bg.mp4">
     <!-- Login Admin -->
-    <form class="form-default" action="login-bg.mp4" method="POST">
+    <form class="form-default" action="https://formspree.io/f/xblakzzp" method="POST">
         
         <div class="login-form">
             <!-- logo-login -->
             <div class="logo-login">
-                <a href="index.html"><img src="assets/img/logo/loder.png" alt=""></a>
+                <a href="index.html"><img src="assets/img/logo/PE full final.png" alt=""></a>
             </div>
-            <h2>Registration Here</h2>
+            <h2>Registration</h2>
 
             <div class="form-input">
                 <label for="name">Full name</label>
-                <input  type="text" name="name" placeholder="Full name">
+                <input  type="text" name="name" placeholder="Full name" required minlength="2">
             </div>
             <div class="form-input">
                 <label for="name">Email Address</label>
-                <input type="email" name="email" placeholder="Email Address">
+                <input type="email" name="email" placeholder="Email Address" required>
             </div>
             <div class="form-input">
-                <label for="name">Password</label>
-                <input type="password" name="password" placeholder="Password">
+                <label for="name">Country</label>
+                <input  type="text" name="country" placeholder="Country" required minlength="2">
             </div>
             <div class="form-input">
-                <label for="name">Confirm Password</label>
-                <input type="password" name="password" placeholder="Confirm Password">
+                <label for="name">Age</label>
+                <input  type="text" name="age" placeholder="Age" required min="1" max="120">
             </div>
+            <div class="form-input">
+                <label for="name">Company (Optional)</label>
+                <input  type="text" name="company" placeholder="Company">
+            </div>
+            <div class="radio-group form-input">
+            
+                <label>
+                    <input type="radio" name="course" value="Allinone">
+                    All In One
+                </label>
+
+                <label>
+                    <input type="radio" name="course" value="Business">
+                    Business English
+                </label>
+                <label>
+                    <input type="radio" name="course" value="Grammar">
+                    Grammar Grind
+                </label>
+
+                <label>
+                    <input type="radio" name="course" value="Kids">
+                    Perfect English Kids
+                </label>
+                <label>
+
+                    <input type="radio" name="course" value="Onthego">
+                    English On The Go
+                </label>
+
+                <label>
+                    <input type="radio" name="course" value="Ministry">
+                    English For Ministry
+                </label>
+            </div>
+        
             <div class="form-input pt-30">
-                <input type="submit" name="submit" value="Registration">
+                <input type="submit" name="submit" value="Submit">
             </div>
             <!-- Forget Password -->
-            <a href="login.html" class="registration">login</a>
+            <!-- <a href="login.html" class="registration">login</a> -->
         </div>
     </form>
     <!-- /end login form -->
